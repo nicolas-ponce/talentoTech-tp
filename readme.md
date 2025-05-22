@@ -1,0 +1,1 @@
+Hola! La idea de esta página es de una tienda online de productos de cuero argentino de una marca inventada llamada Kadle. Espero les guste!
