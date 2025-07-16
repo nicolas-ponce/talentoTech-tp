@@ -1,17 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KADLE - Cueros Argentinos</title>
+
+    <meta name="description" content="KADLE: Diseño argentino en cuero genuino. Morrales, chaquetas, billeteras y cinturones hechos a mano con materiales nobles.">
+    <meta name="keywords" content="KADLE, cuero argentino, marroquinería, productos de cuero, cinturones, billeteras, morrales, chaquetas">
+    <meta name="author" content="Nicolás Ponce">
+
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Milonga&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <title>KADLE - Cueros Argentinos</title>
 </head>
 <body>
-
 
     <header>
         <a class="header_logo" href="#HERO">KADLE</a>
@@ -23,62 +27,62 @@
             <a class="header_navbar-link" href="#RESEÑAS">RESEÑAS</a>
             <a class="header_navbar-link" href="#CONTACTO">CONTACTO</a>
         </nav>
-    </header>
 
+        <img src="assets/imgs/shopping-cart.png" alt="Ícono del carrito de compras" class="header_cartIcon">
+    </header>
 
     <main>
 
-        <!-- HERO -->
-        <section id="HERO" class="hero">
-            <div class="hero_backgroundImgDiv">
-                <img class="hero_backgroundImg" src="assets/imgs/brown-leather-texture-background.jpg" alt="#">
-            </div>
-            <div class="hero_text">
-                <h1 class="hero_title">KADLE</h1>
-
-                <p class="hero_subtitle">Cueros auténticos. Diseño argentino.</p>
-            </div>
-
-
-            <div class="hero_imgDiv-strap1">
-                <img class="hero_img-strap1" src="assets/imgs/leatherStrap.png" alt="#" />
-            </div>
-            <div class="hero_imgDiv-belt">
-                <img class="hero_img-belt" src="assets/imgs/circularBelt.png" alt="#" />
-            </div>
-            <div class="hero_imgDiv-strap2">
-                <img class="hero_img-strap2" src="assets/imgs/watchStrap.png" alt="#" />
+        <section class="cart">
+            <div class="cart_container">
+                <h3 class="cart_container__header">Carrito de Compras</h3>
+                <p class="cart_container__emptyP">Tu carrito está vacío.</p>
+                <div class="cart_itemsContainer"></div> 
             </div>
         </section>
 
-        <!-- PRODUCTOS -->
+        <section id="HERO" class="hero">
+            <div class="hero_backgroundImgDiv">
+                <img class="hero_backgroundImg" src="assets/imgs/brown-leather-texture-background.jpg" alt="Textura de cuero marrón de fondo">
+            </div>
+            <div class="hero_text">
+                <h1 class="hero_title">KADLE</h1>
+                <p class="hero_subtitle">Cueros auténticos. Diseño argentino.</p>
+            </div>
+
+            <div class="hero_imgDiv-strap1">
+                <img class="hero_img-strap1" src="assets/imgs/leatherStrap.png" alt="Correa de cuero decorativa 1" />
+            </div>
+            <div class="hero_imgDiv-belt">
+                <img class="hero_img-belt" src="assets/imgs/circularBelt.png" alt="Cinturón de cuero decorativo" />
+            </div>
+            <div class="hero_imgDiv-strap2">
+                <img class="hero_img-strap2" src="assets/imgs/watchStrap.png" alt="Correa de reloj de cuero decorativa" />
+            </div>
+        </section>
+
         <section id="PRODUCTOS" class="productos">
             <h2>Productos</h2>
 
             <div class="productos_cardsDiv">
                 <div class="productos_cardsDiv-card">
                     <div class="productos_cardsDiv-card_imgDiv">
-                        <img class="productos_cardsDiv-card_img" src="assets/imgs/products/bag-product.webp" alt="#">
+                        <img class="productos_cardsDiv-card_img" src="assets/imgs/products/bag-product.webp" alt="Morral de cuero Andar">
                     </div>
-
                     <p class="productos_cardsDiv-card_name">Morral "Andar"</p>
                     <p class="productos_cardsDiv-card_description">Andar te acompaña a donde vayas.</p>
-
                     <div class="productos_cardsDiv-card_priceAndBtnDiv">
                         <p class="productos_cardsDiv-card_price">$45000</p>
                         <button class="productos_cardsDiv-card_addToCartBtn">Añadir al carrito</button>
                     </div>
-
                 </div>
 
                 <div class="productos_cardsDiv-card">
                     <div class="productos_cardsDiv-card_imgDiv">
-                        <img class="productos_cardsDiv-card_img" src="assets/imgs/products/belt-product.webp" alt="#">
+                        <img class="productos_cardsDiv-card_img" src="assets/imgs/products/belt-product.webp" alt="Cinturón de cuero Ceñir">
                     </div>
-
                     <p class="productos_cardsDiv-card_name">Cinturón "Ceñir"</p>
                     <p class="productos_cardsDiv-card_description">Ceñir: fuerza y detalle que cierra tu estilo.</p>
-
                     <div class="productos_cardsDiv-card_priceAndBtnDiv">
                         <p class="productos_cardsDiv-card_price">$9500</p>
                         <button class="productos_cardsDiv-card_addToCartBtn">Añadir al carrito</button>
@@ -87,12 +91,10 @@
 
                 <div class="productos_cardsDiv-card">
                     <div class="productos_cardsDiv-card_imgDiv">
-                        <img class="productos_cardsDiv-card_img" src="assets/imgs/products/jacket-product.webp" alt="#">
+                        <img class="productos_cardsDiv-card_img" src="assets/imgs/products/jacket-product.webp" alt="Chaqueta de cuero Brasa">
                     </div>
-
                     <p class="productos_cardsDiv-card_name">Chaqueta "Brasa"</p>
                     <p class="productos_cardsDiv-card_description">Brasa, la chaqueta que deja una marca.</p>
-                    
                     <div class="productos_cardsDiv-card_priceAndBtnDiv">
                         <p class="productos_cardsDiv-card_price">$79000</p>
                         <button class="productos_cardsDiv-card_addToCartBtn">Añadir al carrito</button>
@@ -101,12 +103,10 @@
 
                 <div class="productos_cardsDiv-card">
                     <div class="productos_cardsDiv-card_imgDiv">
-                        <img class="productos_cardsDiv-card_img" src="assets/imgs/products/wallet-product.webp" alt="#">
+                        <img class="productos_cardsDiv-card_img" src="assets/imgs/products/wallet-product.webp" alt="Billetera de cuero Fuelle">
                     </div>
-
                     <p class="productos_cardsDiv-card_name">Billetera "Fuelle"</p>
                     <p class="productos_cardsDiv-card_description">Fuelle, diseño compacto con alma amplia.</p>
-                    
                     <div class="productos_cardsDiv-card_priceAndBtnDiv">
                         <p class="productos_cardsDiv-card_price">$6200</p>
                         <button class="productos_cardsDiv-card_addToCartBtn">Añadir al carrito</button>
@@ -115,38 +115,21 @@
             </div>
         </section>
 
-        <!-- SOBRE NOSOTROS -->
         <section id="ABOUTUS" class="aboutUs">
             <video class="aboutUs_video" src="assets/vids/craftmanshipVideo.mp4" autoplay muted loop playsinline></video>
-
             <div class="aboutUs_text">
                 <h2>Sobre Nosotros</h2>
-                <p>
-                    <b><span>Kadle</span> nace del deseo de crear productos que perduren en el tiempo, no solo por su calidad, sino por lo que representan.</b> En un mundo donde todo parece acelerado y descartable, elegimos ir en la dirección contraria: rescatar el valor de lo hecho a mano, con materiales nobles y una historia detrás de cada pieza.
-                </p>
-                <p>
-                    Somos una marca argentina con raíces profundas en la tradición marroquinera, pero con la mirada puesta en el presente. Creemos en el diseño como una forma de expresión, y en el cuero como un material vivo, que mejora con los años, toma forma con el uso y se vuelve único con el paso del tiempo.
-                </p>
-                <p>
-                    Cada uno de nuestros productos —morral, billetera, cinturón o chaqueta— es concebido con propósito: diseñados con líneas limpias, funcionales y atemporales, pero siempre con carácter. Trabajamos con talleres locales y artesanos que entienden la importancia de los detalles, la paciencia y el oficio.
-                </p>
-                <p>
-                    Elegimos cuero genuino, seleccionado cuidadosamente por su textura, resistencia y belleza natural. No buscamos esconder sus marcas, al contrario: las celebramos. Porque cada cicatriz, cada veta, cuenta una historia. Igual que cada persona que elige llevar <span>Kadle</span>.
-                </p>
-                <p>
-                    No hacemos productos en masa. Hacemos piezas con alma.
-                    Porque creemos que lo auténtico no pasa de moda.
-                </p>
+                <p><b><span>Kadle</span> nace del deseo de crear productos que perduren en el tiempo, no solo por su calidad, sino por lo que representan.</b> En un mundo donde todo parece acelerado y descartable, elegimos ir en la dirección contraria: rescatar el valor de lo hecho a mano, con materiales nobles y una historia detrás de cada pieza.</p>
+                <p>Somos una marca argentina con raíces profundas en la tradición marroquinera, pero con la mirada puesta en el presente. Creemos en el diseño como una forma de expresión, y en el cuero como un material vivo, que mejora con los años, toma forma con el uso y se vuelve único con el paso del tiempo.</p>
+                <p>Cada uno de nuestros productos —morral, billetera, cinturón o chaqueta— es concebido con propósito: diseñados con líneas limpias, funcionales y atemporales, pero siempre con carácter. Trabajamos con talleres locales y artesanos que entienden la importancia de los detalles, la paciencia y el oficio.</p>
+                <p>Elegimos cuero genuino, seleccionado cuidadosamente por su textura, resistencia y belleza natural. No buscamos esconder sus marcas, al contrario: las celebramos. Porque cada cicatriz, cada veta, cuenta una historia. Igual que cada persona que elige llevar <span>Kadle</span>.</p>
+                <p>No hacemos productos en masa. Hacemos piezas con alma. Porque creemos que lo auténtico no pasa de moda.</p>
                 <p><b><span>Kadle</span> es cuero que acompaña, conecta y perdura.</b></p>
             </div>
-
-
         </section>
 
-        <!-- RESEÑAS -->
         <section id="RESEÑAS" class="reseñas">
             <h2>Reseñas</h2>
-
             <div class="reseñas_cardsDiv">
                 <div class="reseñas_card">
                     <p class="reseñas_card-text">"La calidad del cuero es increíble y el diseño es único. Mi morral 'Andar' me acompaña todos los días. ¡Recomendadísimo!"</p>
@@ -163,13 +146,10 @@
             </div>
         </section>
 
-        <!-- CONTACTO -->
         <section id="CONTACTO" class="contacto">
             <h2>Contacto</h2>
-
-            
             <div class="contacto_container">
-                <form action="https://formspree.io/f/#" method="POST" class="contacto_form">
+                <form action="https://formspree.io/f/xwpqkblw" method="POST" class="contacto_form">
                     <div class="contacto_form_div contacto_form_div-name">
                         <input type="text" id="nombre" name="nombre" placeholder=" " required>
                         <label for="nombre">Nombre</label>
@@ -204,26 +184,20 @@
                     </div>
                 </div>
             </div>
-
         </section>
     </main>
-
 
     <footer class="footer">
         <div class="footer_bck1"></div>
         <div class="footer_bck2"></div>
-
         <div class="footer_container">
             <h4>KADLE</h4>
             <p>Marca registrada. Todos los derechos reservados. 2025</p>
-
             <div class="footer_line"></div>
-
             <p>Dev & Design by <a href="https://nicolasponce.vercel.app/" target="_blank">Nicolás Ponce</a></p>
-
         </div>
-
     </footer>
 
+    <script src="scripts/script.js"></script>
 </body>
 </html>
